@@ -10,6 +10,79 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li a {
+  color: #e0e0e0;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  position: relative;
+}
+ul li a:hover {
+  color: #fff;
+}
+
+p {
+  color: #000;
+  opacity: 65%;
+}
 #app {
   overflow: hidden;
 }
+/* header */
+/* top-header */
+.top-header {
+  background: var(--bs-color-primary);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 24px rgba(0, 0, 0, 0.08);
+  padding: 5px 0;
+}
+.top-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-header .links,
+.top-header .icons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  gap: 1rem;
+}
+.top-header .links li a:active:before,
+.top-header .links li a:focus:before {
+  content: url("/assets/images/icons/Vector 2.svg");
+  position: absolute;
+  height: 10px;
+  top: 40%;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+@media screen and (max-width: 980px) {
+  .top-header {
+    display: none;
+  }
+}
+/* hero-section */
+section.hero {
+  background: #c4c4c4;
+  height: 500px;
+}
+/* unec-section */
+/* rəqəmsal-section */
+/* Xəbərlər-section */
+/* Elanlar-section */
+/* Faktlar-section */
+/* sosial-section */
+/* Tələbələrin-section */
+/* FƏXRİ-section */
+/* sites-section */
+/* Footer */
