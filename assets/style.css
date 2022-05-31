@@ -1,0 +1,15 @@
+:root {
+  --bs-font-family-base: "Libre Franklin", sans-serif;
+  --bs-color-primary: #00304a;
+  --bs-color-secondary: #526581;
+}
+
+body {
+  margin: 0;
+  font-family: var(--bs-font-family-base);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+#app {
+  overflow: hidden;
+}
