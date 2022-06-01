@@ -32,6 +32,7 @@ ul li a {
 }
 ul li a:hover {
   color: #fff;
+  text-decoration: none;
 }
 
 p {
@@ -128,6 +129,11 @@ section.hero {
   background: #c4c4c4;
   height: 500px;
 }
+@media screen and (max-width: 980px) {
+  section.hero {
+    display: none;
+  }
+}
 /* unec-section */
 section.unec {
   position: relative;
@@ -207,11 +213,12 @@ section.unec .unec-group h2 {
     width: 6.6rem;
   }
 }
-/* rəqəmsal-section */
-section.rəqəmsal {
+/* unec-2-section */
+section.unec-2 {
   margin-top: 1.3rem;
+  padding-bottom: 2rem;
 }
-section.rəqəmsal .content-col {
+section.unec-2 .content-col {
   font-weight: 700;
   padding: 0 1rem 0 0;
   font-size: 13px;
@@ -221,29 +228,29 @@ section.rəqəmsal .content-col {
   text-align: center;
   border-right: 2px solid #bebdb9;
 }
-section.rəqəmsal .content-col h2 {
+section.unec-2 .content-col h2 {
   font-size: 19px;
   line-height: 16px;
   margin-bottom: 1.5rem;
   font-weight: bolder;
 }
-section.rəqəmsal .content-col span {
+section.unec-2 .content-col span {
   opacity: 70%;
 }
-section.rəqəmsal .content-col span {
+section.unec-2 .content-col span {
   display: block;
   text-align: right;
 }
 @media screen and (max-width: 980px) {
-  section.rəqəmsal {
+  section.unec-2 {
     display: none;
   }
 }
 /* carousel */
-section.rəqəmsal .carousel .content img {
+section.unec-2 .carousel .content img {
   margin-bottom: 1.4rem;
 }
-section.rəqəmsal .carousel .content p {
+section.unec-2 .carousel .content p {
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
@@ -271,11 +278,19 @@ section.rəqəmsal .carousel .content p {
   .carousel-inner .carousel-item-end.active,
   .carousel-inner .carousel-item-next {
     transform: translateX(25%);
+    -webkit-transform: translateX(25%);
+    -moz-transform: translateX(25%);
+    -ms-transform: translateX(25%);
+    -o-transform: translateX(25%);
   }
 
   .carousel-inner .carousel-item-start.active,
   .carousel-inner .carousel-item-prev {
     transform: translateX(-25%);
+    -webkit-transform: translateX(-25%);
+    -moz-transform: translateX(-25%);
+    -ms-transform: translateX(-25%);
+    -o-transform: translateX(-25%);
   }
 }
 
@@ -290,8 +305,8 @@ section.rəqəmsal .carousel .content p {
 .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
   flex: 0 1 auto;
-  width: 10px; /* change width */
-  height: 10px; /* change height */
+  width: 10px;
+  height: 10px;
   padding: 0;
   margin-right: 3px;
   margin-left: 3px;
@@ -304,13 +319,65 @@ section.rəqəmsal .carousel .content p {
   border-bottom: 10px solid transparent;
   opacity: 0.5;
   transition: opacity 0.6s ease;
-  border-radius: 100%; /* add border-radius */
+  border-radius: 100%;
+  -webkit-transition: opacity 0.6s ease;
+  -moz-transition: opacity 0.6s ease;
+  -ms-transition: opacity 0.6s ease;
+  -o-transition: opacity 0.6s ease;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+/* rəqəmsal-section */
+section.rəqəmsal {
+  padding: 3rem 0;
+  background: #e0ded9;
 }
 /* Xəbərlər-section */
+section.xəbərlər {
+  padding: 3rem 0;
+  background: #fff;
+}
 /* Elanlar-section */
+section.elanlar {
+  padding: 3rem 0;
+}
 /* Faktlar-section */
+section.faktlar {
+  padding: 3rem 0;
+  background-color: #e0ded9;
+}
+section.faktlar .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* sosial-section */
+section.sosial {
+  padding: 3rem 0;
+  background: #fff;
+}
 /* Tələbələrin-section */
+section.talabalarin {
+  padding: 3rem 0;
+}
 /* FƏXRİ-section */
+section.faxri {
+  padding: 3rem 0;
+  background-color: #fff;
+}
 /* sites-section */
+section.sites {
+  padding: 3rem 0;
+}
 /* Footer */
+footer {
+  padding: 3rem 0;
+  background: #02205c;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
