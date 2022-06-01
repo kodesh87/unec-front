@@ -376,8 +376,38 @@ footer {
   padding: 3rem 0;
   background: #02205c;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 28px;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+footer ul {
+  list-style: none;
+}
+.icon {
+  padding-right: 25px;
+  background: url("/assets/images/footer/Vector\ \(5\).svg") no-repeat right;
+  background-size: 20px;
+}
+footer .icons {
+  display: flex;
+  gap: 0.7rem;
+}
+footer .logo {
+  display: flex;
+  gap: 0.5rem;
+  margin-right: 1.5rem;
+}
+footer .bottom-footer {
+  margin-top: 2rem;
+}
+@media screen and (max-width: 980px) {
+  footer .bottom-footer div {
+    float: none !important;
+    display: flex;
+    justify-content: center;
+  }
+  footer .logo {
+    margin-bottom: 1rem;
+  }
 }
