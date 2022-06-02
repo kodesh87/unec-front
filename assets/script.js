@@ -13,7 +13,11 @@ items.forEach((el) => {
     next = next.nextElementSibling;
   }
 });
-
+// desktop menu
 $(".toggle-btn").click(function () {
   $("#menu-toggle").toggle();
+});
+// mobile menu
+$(".toggle-menu-btn").click(function () {
+  $("#mobile-menu").toggle();
 });
