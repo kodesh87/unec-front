@@ -272,12 +272,25 @@ header .nav-tabs .nav-link {
   position: absolute;
   top: 6.9rem;
   width: 100%;
-  background: #fff;
+  background: #fafafa;
   max-width: 1144px;
   -webkit-box-shadow: inset -5px -6px 0px -2px #c4c4c4;
   -moz-box-shadow: inset -5px -6px 0px -2px #c4c4c4;
   box-shadow: inset -5px -6px 0px -2px #c4c4c4;
-  height: 200px;
+  padding: 1.5rem 3.5rem;
+}
+.tab-content ul {
+  list-style: none;
+}
+.tab-content ul li {
+  border-bottom: 1px solid #f3f1ec;
+  padding: 1rem 0;
+}
+.tab-content ul li a {
+  color: var(--bs-color-primary);
+}
+.tab-content ul li a:hover {
+  color: #0066cc;
 }
 /* navbar-mobile */
 .navbar-mobile {
