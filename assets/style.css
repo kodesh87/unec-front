@@ -572,6 +572,9 @@ section.unec-2 .content-col span {
   color: rgba(0, 0, 0, 0.65);
   margin-top: 1rem;
 }
+.carousel-indicators {
+  z-index: unset;
+}
 .carousel-indicators li {
   width: 0.6rem;
   height: 0.6rem;
