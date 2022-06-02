@@ -246,7 +246,7 @@ header {
   gap: 1.5rem;
 }
 /* nav-tabs */
-header .nav-tabs .nav-link {
+header .nav-tabs li a {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -255,15 +255,17 @@ header .nav-tabs .nav-link {
   letter-spacing: 0.03em;
   color: rgba(0, 0, 0, 0.65);
 }
-.nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-link:hover {
+.nav-tabs .nav-item.show a,
+.nav-tabs li a.active,
+.nav-tabs li a:hover {
   color: rgba(0, 0, 0, 0.65);
   background-color: transparent;
   border: 0;
 }
 .nav-tabs {
   border-bottom: none;
+  gap: 3rem;
+  margin-left: auto;
 }
 .tab-content {
   position: absolute;
@@ -660,10 +662,20 @@ section.talabalarin {
 section.faxri {
   padding: 3rem 0;
   background-color: #fff;
+  margin-bottom: 9.5rem;
 }
 /* sites-section */
-section.sites {
-  padding: 3rem 0;
+div.sites {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 2rem 3rem;
+  position: absolute;
+  top: -127px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Footer */
 footer {

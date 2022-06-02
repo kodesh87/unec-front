@@ -144,24 +144,24 @@
             </ul>
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
-                <a class="nav-link nav-tabs-toggle" id="Haqqımızda-tab" data-toggle="tab" href="#Haqqımızda" role="tab"
+                <a class="nav-tabs-toggle" id="Haqqımızda-tab" data-toggle="tab" href="#Haqqımızda" role="tab"
                   aria-controls="Haqqımızda" aria-selected="true">Haqqımızda</a>
               </li>
               <li class="nav-item" role="presentation">
-                <a class="nav-link nav-tabs-toggle" id="İxtisaslar-tab" data-toggle="tab" href="#İxtisaslar" role="tab"
+                <a class="nav-tabs-toggle" id="İxtisaslar-tab" data-toggle="tab" href="#İxtisaslar" role="tab"
                   aria-controls="İxtisaslar" aria-selected="false">İxtisaslar</a>
               </li>
               <li class="nav-item" role="presentation">
-                <a class="nav-link nav-tabs-toggle" id="Sosial-tab" data-toggle="tab" href="#Sosial" role="tab"
+                <a class="nav-tabs-toggle" id="Sosial-tab" data-toggle="tab" href="#Sosial" role="tab"
                   aria-controls="Sosial" aria-selected="false">Sosial həyat</a>
               </li>
               <li class="nav-item" role="presentation">
-                <a class="nav-link nav-tabs-toggle" id="Beynəlxalq-tab" data-toggle="tab" href="#Beynəlxalq" role="tab"
+                <a class="nav-tabs-toggle" id="Beynəlxalq-tab" data-toggle="tab" href="#Beynəlxalq" role="tab"
                   aria-controls="Beynəlxalq" aria-selected="false">Beynəlxalq əməkdaşlıq</a>
               </li>
               <li class="nav-item" role="presentation">
-                <a class="nav-link nav-tabs-toggle" id="UNEC-tab" data-toggle="tab" href="#UNEC" role="tab"
-                  aria-controls="UNEC" aria-selected="false">UNEC NEWS</a>
+                <a class="nav-tabs-toggle" id="UNEC-tab" data-toggle="tab" href="#UNEC" role="tab" aria-controls="UNEC"
+                  aria-selected="false">UNEC NEWS</a>
               </li>
             </ul>
             <div class="tab-content" id="myTabContent" style="display: none;">
@@ -514,17 +514,12 @@
               <h2>Xəbərlər</h2>
               <span>Bütün xəbərlər</span>
             </div>
-            <div class="dropdown">
-              <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Rubrika
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </div>
+            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+              <option selected>Rubrika</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
           </div>
           <div class="card-group">
             <div class="row">
@@ -822,8 +817,11 @@
           </div>
         </div>
       </section>
+    </main>
+    <!-- Footer -->
+    <footer class="position-relative mt-4w-100">
       <!-- sites-section  -->
-      <section class="sites">
+      <div class="sites">
         <div class="container">
           <div class="sites-group">
             <a href="www.president.az" target="_blank">www.president.az</a>
@@ -841,10 +839,7 @@
             <a href="www.polpred.com" target="_blank">www.polpred.com</a>
           </div>
         </div>
-      </section>
-    </main>
-    <!-- Footer -->
-    <footer class="position-relative mt-4w-100">
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-4">
