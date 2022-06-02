@@ -1,18 +1,3 @@
-let items = document.querySelectorAll(".carousel .carousel-item");
-
-items.forEach((el) => {
-  const minPerSlide = 4;
-  let next = el.nextElementSibling;
-  for (var i = 1; i < minPerSlide; i++) {
-    if (!next) {
-      // wrap carousel by using first child
-      next = items[0];
-    }
-    let cloneChild = next.cloneNode(true);
-    el.appendChild(cloneChild.children[0]);
-    next = next.nextElementSibling;
-  }
-});
 // desktop menu
 $(".toggle-btn").click(function () {
   $("#menu-toggle").toggle();
@@ -30,4 +15,8 @@ $(".panel-collapse").on("show.bs.collapse", function () {
 
 $(".panel-collapse").on("hide.bs.collapse", function () {
   $(this).siblings(".panel-heading").removeClass("active");
+});
+// nav-tabs-toggle
+$(".nav-tabs-toggle").click(function () {
+  $("#myTabContent").toggle();
 });

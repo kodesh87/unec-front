@@ -126,10 +126,6 @@
       <nav class="navbar navbar-desktop navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#"><img src="assets/images/logo 1.svg" alt="navbar-brand"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
           <div class="collapse navbar-collapse" style="flex-direction: column;" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto text-uppercase">
               <a href="#" class="qabul" style="text-decoration: none;">Qəbul</a>
@@ -146,23 +142,36 @@
                 <a class="nav-link" href="#">Vİrtual tur</a>
               </li>
             </ul>
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="" href="#">Haqqımızda</a>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active " id="Haqqımızda-tab" data-toggle="tab" href="#Haqqımızda" role="tab"
+                  aria-controls="Haqqımızda" aria-selected="true">Haqqımızda</a>
               </li>
-              <li class="nav-item">
-                <a class="" href="#">İxtisaslar</a>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="İxtisaslar-tab" data-toggle="tab" href="#İxtisaslar" role="tab"
+                  aria-controls="İxtisaslar" aria-selected="false">İxtisaslar</a>
               </li>
-              <li class="nav-item">
-                <a class="" href="#">Sosial həyat</a>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="Sosial-tab" data-toggle="tab" href="#Sosial" role="tab" aria-controls="Sosial"
+                  aria-selected="false">Sosial həyat</a>
               </li>
-              <li class="nav-item">
-                <a class="" href="#">Beynəlxalq əməkdaşlıq</a>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="Beynəlxalq-tab" data-toggle="tab" href="#Beynəlxalq" role="tab"
+                  aria-controls="Beynəlxalq" aria-selected="false">Beynəlxalq əməkdaşlıq</a>
               </li>
-              <li class="nav-item">
-                <a class="" href="#">UNEC NEWS</a>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="UNEC-tab" data-toggle="tab" href="#UNEC" role="tab" aria-controls="UNEC"
+                  aria-selected="false">UNEC NEWS</a>
               </li>
             </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="Haqqımızda" role="tabpanel" aria-labelledby="Haqqımızda-tab">
+                ..1.</div>
+              <div class="tab-pane fade" id="İxtisaslar" role="tabpanel" aria-labelledby="İxtisaslar-tab">.2..</div>
+              <div class="tab-pane fade" id="Sosial" role="tabpanel" aria-labelledby="Sosial-tab">..3.</div>
+              <div class="tab-pane fade" id="Beynəlxalq" role="tabpanel" aria-labelledby="Beynəlxalq-tab">..4.</div>
+              <div class="tab-pane fade" id="UNEC" role="tabpanel" aria-labelledby="UNEC-tab">..5.</div>
+            </div>
           </div>
         </div>
       </nav>

@@ -52,6 +52,7 @@ h2 {
 /* header */
 header {
   position: relative;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 24px rgba(0, 0, 0, 0.08);
 }
 /* top-header */
 .top-header {
@@ -73,7 +74,9 @@ header {
   gap: 1rem;
 }
 .top-header .links li a:active:before,
-.top-header .links li a:focus:before {
+.top-header .links li a:focus:before,
+.navbar-desktop ul li a:active:before,
+.navbar-desktop ul li a:focus:before {
   content: url("images/icons/Vector 2.svg");
   position: absolute;
   height: 10px;
@@ -85,6 +88,11 @@ header {
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
+  text-align: center;
+}
+.navbar-desktop ul li a:active:before,
+.navbar-desktop ul li a:focus:before {
+  content: url("images/Vector\ 1.svg");
 }
 .top-header .icons li a {
   font-size: 12px;
@@ -216,7 +224,7 @@ header {
 /* navbar */
 .navbar-expand-lg .navbar-nav .nav-link {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 150%;
   display: flex;
   align-items: center;
@@ -226,13 +234,50 @@ header {
 }
 .qabul {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 150%;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #0066cc;
+}
+.navbar-expand-lg .navbar-nav {
+  gap: 1.5rem;
+}
+/* nav-tabs */
+header .nav-tabs .nav-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.65);
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:hover {
+  color: rgba(0, 0, 0, 0.65);
+  background-color: transparent;
+  border: 0;
+}
+.nav-tabs {
+  border-bottom: none;
+}
+.nav-tabs .nav-link:hover {
+  margin: 0 !important;
+}
+.tab-content {
+  position: absolute;
+  top: 6.9rem;
+  width: 100%;
+  background: #fff;
+  max-width: 1144px;
+  -webkit-box-shadow: inset -5px -6px 0px -2px #c4c4c4;
+  -moz-box-shadow: inset -5px -6px 0px -2px #c4c4c4;
+  box-shadow: inset -5px -6px 0px -2px #c4c4c4;
+  height: 200px;
 }
 /* navbar-mobile */
 .navbar-mobile {
