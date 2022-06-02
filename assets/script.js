@@ -13,3 +13,7 @@ items.forEach((el) => {
     next = next.nextElementSibling;
   }
 });
+
+$(".toggle-btn").click(function () {
+  $("#menu-toggle").toggle();
+});

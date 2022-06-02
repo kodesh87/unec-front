@@ -33,7 +33,7 @@
       <div class="top-header">
         <div class="container">
           <div class="menu">
-            <button><img src="assets/images/icons/menu.svg" alt="opem-menu"> MENYU</button>
+            <button class="toggle-btn"><img src="assets/images/icons/menu.svg" alt="open-menu"> MENYU</button>
           </div>
           <ul class="links">
             <li><a href="#">Tələbə</a></li>
@@ -52,8 +52,117 @@
             <li><a href="#">EN</a></li>
           </ul>
         </div>
+        <div class="container">
+          <div class="menu-toggle" id="menu-toggle">
+            <div class="menu">
+              <button class="toggle-btn"><img src="assets/images/close.svg" alt="=close-menu"></button>
+            </div>
+            <div class="row">
+              <div class="col-5">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link active show" id="sidebar-menu-2-tab" data-toggle="pill" href="#sidebar-menu-2"
+                    role="tab" aria-controls="sidebar-menu-2" aria-selected="false">Sidebar menu active 02</a>
+                  <a class="nav-link" id="sidebar-menu-3-tab" data-toggle="pill" href="#sidebar-menu-3" role="tab"
+                    aria-controls="sidebar-menu-3" aria-selected="false">Sidebar menu 03</a>
+                  <a class="nav-link" id="sidebar-menu-4-tab" data-toggle="pill" href="#sidebar-menu-4" role="tab"
+                    aria-controls="sidebar-menu-4" aria-selected="false">Sidebar menu 04</a>
+                  <a class="nav-link" id="sidebar-menu-5-tab" data-toggle="pill" href="#sidebar-menu-5" role="tab"
+                    aria-controls="sidebar-menu-5" aria-selected="true">Sidebar menu 05</a>
+                  <a class="nav-link active show" id="sidebar-menu-6-tab" data-toggle="pill" href="#sidebar-menu-6"
+                    role="tab" aria-controls="sidebar-menu-6" aria-selected="true">Sidebar menu active 06</a>
+                  <a class="nav-link" id="sidebar-menu-7-tab" data-toggle="pill" href="#sidebar-menu-7" role="tab"
+                    aria-controls="sidebar-menu-7" aria-selected="true">Sidebar menu 07</a>
+                </div>
+              </div>
+              <div class="col-7">
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade active show" id="sidebar-menu-2" role="tabpanel"
+                    aria-labelledby="sidebar-menu-2-tab">
+                    <ul>
+                      <li>Sidebar sub menu 01</li>
+                      <li>Sidebar sub menu 02</li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane fade" id="sidebar-menu-3" role="tabpanel" aria-labelledby="sidebar-menu-3-tab">
+                    <ul>
+                      <li>Sidebar sub menu 01</li>
+                      <li>Sidebar sub menu 02</li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane fade" id="sidebar-menu-4" role="tabpanel" aria-labelledby="sidebar-menu-4-tab">
+                    <ul>
+                      <li>Sidebar sub menu 01</li>
+                      <li>Sidebar sub menu 02</li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane fade" id="sidebar-menu-5" role="tabpanel" aria-labelledby="sidebar-menu-5-tab">
+                    <ul>
+                      <li>Sidebar sub menu 01</li>
+                      <li>Sidebar sub menu 02</li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane fade active show" id="sidebar-menu-6" role="tabpanel"
+                    aria-labelledby="sidebar-menu-6-tab">
+                    <ul>
+                      <li>Sidebar sub menu 01</li>
+                      <li>Sidebar sub menu 02</li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane fade" id="sidebar-menu-7" role="tabpanel" aria-labelledby="sidebar-menu-7-tab">
+                    <ul>
+                      <li>Sidebar sub menu 01</li>
+                      <li>Sidebar sub menu 02</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <nav></nav>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="assets/images/logo 1.svg" alt="navbar-brand"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" style="flex-direction: column;" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto text-uppercase">
+              <a href="#" class="qabul">Qəbul</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Təhsİl</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Elm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Elektron Unİversİtet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Vİrtual tur</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="" href="#">Haqqımızda</a>
+              </li>
+              <li class="nav-item">
+                <a class="" href="#">İxtisaslar</a>
+              </li>
+              <li class="nav-item">
+                <a class="" href="#">Sosial həyat</a>
+              </li>
+              <li class="nav-item">
+                <a class="" href="#">Beynəlxalq əməkdaşlıq</a>
+              </li>
+              <li class="nav-item">
+                <a class="" href="#">UNEC NEWS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- main-content -->
     <main>
