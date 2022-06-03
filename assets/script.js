@@ -6,17 +6,20 @@ $(".toggle-btn").click(function () {
 $(".toggle-menu-btn").click(function () {
   $("#mobile-menu").toggle();
 });
-
-// accordion;
-
-$(".panel-collapse").on("show.bs.collapse", function () {
-  $(this).siblings(".panel-heading").addClass("active");
-});
-
-$(".panel-collapse").on("hide.bs.collapse", function () {
-  $(this).siblings(".panel-heading").removeClass("active");
-});
 // nav-tabs-toggle
 $(".nav-tabs-toggle").click(function () {
   $("#myTabContent").toggle();
+});
+$(document).on("click", ".menu-toggled", function (e) {
+  e.stopPropagation();
+  $(".menu-toggled").not($(this)).removeClass("active");
+  $(this).toggleClass("active");
+});
+
+$(document).on("click", function () {
+  $(".menu-toggled").removeClass("active");
+});
+
+$(document).on("click", ".menu-content", function (e) {
+  e.stopPropagation();
 });
