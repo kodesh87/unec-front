@@ -614,6 +614,12 @@ section.rəqəmsal {
   padding: 3rem 0;
   background: #e0ded9;
 }
+@media screen and (max-width: 980px) {
+  section.rəqəmsal {
+    padding-top: 8rem;
+  }
+}
+
 section.rəqəmsal blockquote {
   font-weight: 400;
   font-size: 24px;
