@@ -289,7 +289,7 @@ header {
   color: rgba(0, 0, 0, 0.65);
 }
 .dropdown-nav .navbar-nav {
-  gap: 3rem;
+  gap: 2rem;
 }
 @media screen and (max-width: 1200px) {
   .dropdown-nav .navbar-nav {
@@ -1142,7 +1142,115 @@ section.sosial {
 }
 /* Tələbələrin-section */
 section.talabalarin {
-  padding: 3rem 0;
+  padding: 4rem 0;
+}
+section.talabalarin .title {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+section.talabalarin .title h2 {
+  font-weight: 600;
+  font-size: 81px;
+  line-height: 35px;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+section.talabalarin .title span {
+  color: #828282;
+  font-weight: 500;
+  font-size: 22px;
+}
+section.talabalarin .title .left {
+  border-right: 0.75px solid #bdbdbd;
+  padding-right: 2rem;
+}
+section.talabalarin .title .right p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #828282;
+}
+section.talabalarin .title .right {
+  display: flex;
+  align-items: center;
+  max-width: 231px;
+}
+@media screen and (max-width: 768px) {
+  section.talabalarin .title {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  section.talabalarin .title .left {
+    border-right: none;
+    border-bottom: 0.75px solid #bdbdbd;
+  }
+}
+section.talabalarin .horizontal-scroll {
+  display: flex;
+  gap: 5px;
+  height: 320px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+section.talabalarin .horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+section.talabalarin .horizontal-scroll__item {
+  align-items: center;
+  display: flex;
+  flex: 0 0 200px;
+  justify-content: center;
+  scroll-snap-align: start;
+  margin-right: -6px;
+  cursor: pointer;
+  position: relative;
+}
+
+section.talabalarin .horizontal-scroll__item .cover {
+  position: absolute;
+  top: 2.5%;
+  left: 5%;
+  bottom: 2.5%;
+  width: 90%;
+  right: 5%;
+  height: 95%;
+  opacity: 0.5;
+  z-index: 1;
+  text-align: center;
+  display: none;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 50, 78, 0) 26.03%,
+    #00324e 94.83%
+  );
+  border: 2px solid #ffffff;
+}
+section.talabalarin .horizontal-scroll__item .cover .content {
+  position: absolute;
+  top: 64%;
+  left: 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  z-index: 2;
+  letter-spacing: 0.03em;
+}
+section.talabalarin .horizontal-scroll__item .cover .content h5 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  margin-top: 1.5rem;
+}
+section.talabalarin .horizontal-scroll__item:hover .cover {
+  display: block;
+}
+section.talabalarin a {
+  text-decoration: none;
+  margin-top: 2rem;
+  text-transform: uppercase;
 }
 /* FƏXRİ-section */
 section.faxri {
