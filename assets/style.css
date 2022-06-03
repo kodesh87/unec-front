@@ -635,7 +635,7 @@ section.rəqəmsal .carousel-indicators .active {
   background-color: var(--bs-color-primary);
 }
 section.rəqəmsal #myCarousel {
-  height: 478px;
+  height: 510px;
 }
 @media screen and (max-width: 992px) {
   section.rəqəmsal blockquote {
@@ -645,7 +645,7 @@ section.rəqəmsal #myCarousel {
     text-align: center;
   }
   section.rəqəmsal #myCarousel {
-    height: 600px;
+    height: 630px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -710,13 +710,18 @@ section.rəqəmsal .card span {
   letter-spacing: 0.03em;
   color: #8a8a8a;
 }
-section.rəqəmsal .card p {
+section.rəqəmsal .card a {
   font-weight: 600;
   margin-bottom: 0;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.03em;
   color: #000000;
+  text-decoration: none;
+}
+section.rəqəmsal .card a:hover,
+section.rəqəmsal .card a:focus {
+  color: #ff0000;
 }
 /*********************************************************************/
 /* Bootstrap 4 Multiple Item Carousel */
@@ -823,6 +828,56 @@ section.xəbərlər .title select {
   border-left: none;
   border-right: none;
   border-radius: 0;
+  box-shadow: none;
+}
+
+section.xəbərlər .card span {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  color: #8a8a8a;
+}
+section.xəbərlər .card a {
+  font-weight: 600;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-decoration: none;
+}
+section.xəbərlər .card a:hover,
+section.xəbərlər .card a:focus {
+  color: #ff0000;
+}
+@media screen and (min-width: 992px) {
+  section.xəbərlər #carouselExampleIndicators3 {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 992px) {
+  section.xəbərlər .card {
+    margin-bottom: 3rem;
+  }
+  section.xəbərlər #carouselExampleIndicators3 {
+    height: 1020px;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.xəbərlər #carouselExampleIndicators3 {
+    height: 895px;
+  }
+}
+@media screen and (max-width: 500px) {
+  section.xəbərlər #carouselExampleIndicators3 {
+    height: 900px;
+  }
+}
+@media screen and (max-width: 367px) {
+  section.xəbərlər #carouselExampleIndicators3 {
+    height: 880px;
+  }
 }
 /* Elanlar-section */
 section.elanlar {
