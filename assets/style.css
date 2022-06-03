@@ -1150,6 +1150,100 @@ section.faxri {
   background-color: #fff;
   margin-bottom: 9.5rem;
 }
+section.faxri .card {
+  background: #f3f1ec;
+  border: none;
+  box-shadow: 0px 6px 12px -2px rgba(50, 50, 93, 0.25),
+    0px 3px 7px -3px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  text-align: center;
+  padding: 1.5rem 1rem 1rem;
+  height: 290px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+section.faxri .carousel-indicators {
+  margin-bottom: 0;
+}
+.carousel-indicators li {
+  background-color: #bdbdbd;
+}
+section.faxri #faxricarousel {
+  height: 285px;
+  background: #f3f1ec;
+}
+section.faxri .carousel-inner {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+section.faxri .card .card-img-top {
+  width: 6rem;
+  margin: 0.7rem auto 0;
+}
+section.faxri .card .card-img-top span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 67px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.64);
+}
+section.faxri .card h5 {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.64);
+}
+section.faxri .card p {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+section.faxri .middle-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+section.faxri .middle-card .card-img-top {
+  width: 11rem;
+}
+section.faxri .middle-card h5 {
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+@media screen and (max-width: 992px) {
+  section.faxri .card {
+    margin-bottom: 2rem;
+  }
+  section.faxri .middle-card {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  section.faxri .middle-card .card-img-top {
+    width: 8rem;
+  }
+  section.faxri .middle-card h5 {
+    font-size: 16px;
+  }
+}
 /* sites-section */
 div.sites {
   max-width: 800px;
