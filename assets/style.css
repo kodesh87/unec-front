@@ -1093,6 +1093,16 @@ section.faktlar .faktlar-border {
   -o-border-radius: 8px;
   padding: 3rem 1rem;
 }
+section.faktlar .card-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 992px) {
+  section.faktlar .card-group {
+    margin-top: 2rem;
+  }
+}
 section.faktlar .card {
   background-color: transparent;
   border: none;
