@@ -6,10 +6,7 @@ $(".toggle-btn").click(function () {
 $(".toggle-menu-btn").click(function () {
   $("#mobile-menu").toggle();
 });
-// nav-tabs-toggle
-$(".nav-tabs-toggle").click(function () {
-  $("#myTabContent").toggle();
-});
+// nav-dropdown
 $(document).on("click", ".menu-toggled", function (e) {
   e.stopPropagation();
   $(".menu-toggled").not($(this)).removeClass("active");
