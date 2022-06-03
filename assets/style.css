@@ -648,6 +648,11 @@ section.rəqəmsal #myCarousel {
     height: 630px;
   }
 }
+@media screen and (width: 992px) {
+  section.rəqəmsal #myCarousel {
+    height: 500px;
+  }
+}
 @media screen and (max-width: 767px) {
   section.rəqəmsal #myCarousel {
     height: 850px;
@@ -729,7 +734,9 @@ section.rəqəmsal .card a:focus {
 /* medium - display 2  */
 @media (min-width: 768px) {
   section.rəqəmsal .carousel-inner .carousel-item-right.active,
-  section.rəqəmsal .carousel-inner .carousel-item-next {
+  section.rəqəmsal .carousel-inner .carousel-item-next,
+  section.elanlar .carousel-inner .carousel-item-right.active,
+  section.elanlar .carousel-inner .carousel-item-next {
     transform: translateX(50%);
     -webkit-transform: translateX(50%);
     -moz-transform: translateX(50%);
@@ -738,7 +745,9 @@ section.rəqəmsal .card a:focus {
   }
 
   section.rəqəmsal .carousel-inner .carousel-item-left.active,
-  section.rəqəmsal .carousel-inner .carousel-item-prev {
+  section.rəqəmsal .carousel-inner .carousel-item-prev,
+  section.elanlar .carousel-inner .carousel-item-left.active,
+  section.elanlar .carousel-inner .carousel-item-prev {
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -750,7 +759,9 @@ section.rəqəmsal .card a:focus {
 /* large - display 3 */
 @media (min-width: 992px) {
   section.rəqəmsal .carousel-inner .carousel-item-right.active,
-  section.rəqəmsal .carousel-inner .carousel-item-next {
+  section.rəqəmsal .carousel-inner .carousel-item-next,
+  section.elanlar .carousel-inner .carousel-item-right.active,
+  section.elanlar .carousel-inner .carousel-item-next {
     transform: translateX(33%);
     -webkit-transform: translateX(33%);
     -moz-transform: translateX(33%);
@@ -759,7 +770,9 @@ section.rəqəmsal .card a:focus {
   }
 
   section.rəqəmsal .carousel-inner .carousel-item-left.active,
-  section.rəqəmsal .carousel-inner .carousel-item-prev {
+  section.rəqəmsal .carousel-inner .carousel-item-prev,
+  section.elanlar .carousel-inner .carousel-item-left.active,
+  section.elanlar .carousel-inner .carousel-item-prev {
     transform: translateX(-33%);
     -webkit-transform: translateX(-33%);
     -moz-transform: translateX(-33%);
@@ -769,23 +782,30 @@ section.rəqəmsal .card a:focus {
 }
 
 @media (max-width: 768px) {
-  section.rəqəmsal .carousel-inner .carousel-item > div {
+  section.rəqəmsal .carousel-inner .carousel-item > div,
+  section.elanlar .carousel-inner .carousel-item > div {
     display: none;
   }
 
-  section.rəqəmsal .carousel-inner .carousel-item > div:first-child {
+  section.rəqəmsal .carousel-inner .carousel-item > div:first-child,
+  section.elanlar .carousel-inner .carousel-item > div:first-child {
     display: block;
   }
 }
 
 section.rəqəmsal .carousel-inner .carousel-item.active,
 section.rəqəmsal .carousel-inner .carousel-item-next,
-section.rəqəmsal .carousel-inner .carousel-item-prev {
+section.rəqəmsal .carousel-inner .carousel-item-prev,
+section.elanlar .carousel-inner .carousel-item.active,
+section.elanlar .carousel-inner .carousel-item-next,
+section.elanlar .carousel-inner .carousel-item-prev {
   display: flex;
 }
 
 section.rəqəmsal .carousel-inner .carousel-item-right,
-section.rəqəmsal .carousel-inner .carousel-item-left {
+section.rəqəmsal .carousel-inner .carousel-item-left,
+section.elanlar .carousel-inner .carousel-item-right,
+section.elanlar .carousel-inner .carousel-item-left {
   transform: translateX(0);
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
@@ -804,7 +824,8 @@ section.xəbərlər .title {
   justify-content: space-between;
   margin-bottom: 2rem;
 }
-section.xəbərlər .title h2 {
+section.xəbərlər .title h2,
+section.elanlar .title h2 {
   font-weight: 600;
   font-size: 36px;
   line-height: 18px;
@@ -814,7 +835,8 @@ section.xəbərlər .title h2 {
   display: inline-block;
   margin-right: 4rem;
 }
-section.xəbərlər .title span {
+section.xəbərlər .title span,
+section.elanlar .title span {
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
@@ -856,6 +878,7 @@ section.xəbərlər .card a:focus {
     height: 450px;
   }
 }
+
 @media screen and (max-width: 992px) {
   section.xəbərlər .card {
     margin-bottom: 3rem;
@@ -879,9 +902,160 @@ section.xəbərlər .card a:focus {
     height: 880px;
   }
 }
+@media screen and (width: 992px) {
+  section.xəbərlər #carouselExampleIndicators3 {
+    height: 460px;
+  }
+}
 /* Elanlar-section */
 section.elanlar {
   padding: 3rem 0;
+}
+section.elanlar .title {
+  display: flex;
+  margin-bottom: 2rem;
+}
+section.elanlar .title span {
+  max-width: 160px;
+}
+@media screen and (max-width: 992px) {
+  section.elanlar .title span {
+    text-align: right;
+  }
+  section.elanlar .col-lg-8 {
+    margin-bottom: 2rem;
+  }
+}
+section.elanlar .card {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+section.elanlar .card h5 a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-decoration: none;
+}
+section.elanlar .card h5 a:hover,
+section.elanlar .card h5 a:focus {
+  color: #ff0000;
+}
+section.elanlar .card a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  color: #00304a;
+}
+section.elanlar .card p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  color: #4f4f4f;
+  margin-bottom: 10px;
+}
+section.elanlar .card span {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.81);
+}
+section.elanlar .card .card-body {
+  padding: 10px 0;
+}
+#elanlarCarousel {
+  height: 380px;
+}
+@media screen and (max-width: 767px) {
+  #elanlarCarousel {
+    height: 480px;
+  }
+}
+@media screen and (max-width: 478px) {
+  #elanlarCarousel {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #elanlarCarousel {
+    height: 395px;
+  }
+}
+@media (width: 768px) {
+  section.elanlar #elanlarCarousel .col-md-6 {
+    -ms-flex: 0 0 70%;
+    flex: 0 0 70%;
+    max-width: 70%;
+    margin-left: 6rem;
+  }
+  #elanlarCarousel {
+    height: 476px;
+  }
+}
+section.elanlar ul {
+  list-style: none;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+section.elanlar ul li {
+  display: flex;
+  gap: 0.5rem;
+}
+section.elanlar ul li .date {
+  width: 200px;
+  height: 80px;
+  background: var(--bs-color-primary);
+  text-align: center;
+  color: #fff;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.elanlar ul li .date span {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+section.elanlar ul li .content p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  color: #03131b;
+  margin-bottom: 0;
+}
+section.elanlar ul li .content span {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  color: #828282;
+}
+section.elanlar .tad {
+  border-left: 1px solid var(--bs-color-primary);
+  padding-left: inherit;
+}
+@media screen and (max-width: 992px) {
+  section.elanlar .tad {
+    border-left: none;
+  }
 }
 /* Faktlar-section */
 section.faktlar {
