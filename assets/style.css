@@ -628,6 +628,58 @@ section.rəqəmsal blockquote {
   color: #000000;
   margin-bottom: 5rem;
 }
+section.rəqəmsal .carousel-indicators li {
+  background-color: #fff;
+}
+section.rəqəmsal .carousel-indicators .active {
+  background-color: var(--bs-color-primary);
+}
+section.rəqəmsal #myCarousel {
+  height: 478px;
+}
+@media screen and (max-width: 992px) {
+  section.rəqəmsal blockquote {
+    margin-bottom: 1.5rem;
+  }
+  section.rəqəmsal blockquote {
+    text-align: center;
+  }
+  section.rəqəmsal #myCarousel {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.rəqəmsal #myCarousel {
+    height: 850px;
+  }
+}
+@media screen and (max-width: 450px) {
+  section.rəqəmsal #myCarousel {
+    height: 650px;
+  }
+}
+@media screen and (max-width: 360px) {
+  section.rəqəmsal #myCarousel {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 300px) {
+  section.rəqəmsal #myCarousel {
+    height: 500px;
+  }
+}
+@media (width: 768px) {
+  section.rəqəmsal #myCarousel .col-md-6 {
+    -ms-flex: 0 0 70%;
+    flex: 0 0 70%;
+    max-width: 70%;
+    margin-left: 6rem;
+  }
+  section.rəqəmsal #myCarousel {
+    height: 790px;
+  }
+}
+
 section.rəqəmsal span {
   font-weight: 600;
   font-size: 16px;
@@ -635,18 +687,21 @@ section.rəqəmsal span {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2f86c0;
+  max-width: 160px;
 }
 section.rəqəmsal .card {
   background: #ffffff;
   box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
   border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 11px;
 }
 section.rəqəmsal .card .card-body {
-  padding: 0.6rem;
-}
-section.rəqəmsal .card .card-img-top {
-  width: 90%;
-  margin: 0.5rem auto 0;
+  padding: 0;
+  padding-top: 0.4rem;
 }
 section.rəqəmsal .card span {
   font-weight: 700;
@@ -663,10 +718,111 @@ section.rəqəmsal .card p {
   letter-spacing: 0.03em;
   color: #000000;
 }
+/*********************************************************************/
+/* Bootstrap 4 Multiple Item Carousel */
+/*********************************************************************/
+/* medium - display 2  */
+@media (min-width: 768px) {
+  section.rəqəmsal .carousel-inner .carousel-item-right.active,
+  section.rəqəmsal .carousel-inner .carousel-item-next {
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+  }
+
+  section.rəqəmsal .carousel-inner .carousel-item-left.active,
+  section.rəqəmsal .carousel-inner .carousel-item-prev {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+}
+
+/* large - display 3 */
+@media (min-width: 992px) {
+  section.rəqəmsal .carousel-inner .carousel-item-right.active,
+  section.rəqəmsal .carousel-inner .carousel-item-next {
+    transform: translateX(33%);
+    -webkit-transform: translateX(33%);
+    -moz-transform: translateX(33%);
+    -ms-transform: translateX(33%);
+    -o-transform: translateX(33%);
+  }
+
+  section.rəqəmsal .carousel-inner .carousel-item-left.active,
+  section.rəqəmsal .carousel-inner .carousel-item-prev {
+    transform: translateX(-33%);
+    -webkit-transform: translateX(-33%);
+    -moz-transform: translateX(-33%);
+    -ms-transform: translateX(-33%);
+    -o-transform: translateX(-33%);
+  }
+}
+
+@media (max-width: 768px) {
+  section.rəqəmsal .carousel-inner .carousel-item > div {
+    display: none;
+  }
+
+  section.rəqəmsal .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+section.rəqəmsal .carousel-inner .carousel-item.active,
+section.rəqəmsal .carousel-inner .carousel-item-next,
+section.rəqəmsal .carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+section.rəqəmsal .carousel-inner .carousel-item-right,
+section.rəqəmsal .carousel-inner .carousel-item-left {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+
 /* Xəbərlər-section */
 section.xəbərlər {
   padding: 3rem 0;
   background: #fff;
+}
+section.xəbərlər .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+section.xəbərlər .title h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 18px;
+  text-align: left;
+  letter-spacing: 0.03em;
+  color: #000000;
+  display: inline-block;
+  margin-right: 4rem;
+}
+section.xəbərlər .title span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #2f86c0;
+}
+section.xəbərlər .title select {
+  width: 10rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
 }
 /* Elanlar-section */
 section.elanlar {
