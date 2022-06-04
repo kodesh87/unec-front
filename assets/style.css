@@ -448,7 +448,7 @@ header .mobile-menu {
 /* hero-section */
 section.hero {
   background: #c4c4c4;
-  height: 500px;
+  height: 400px;
 }
 @media screen and (max-width: 991px) {
   section.hero {
@@ -2211,4 +2211,41 @@ section.article-page .CTRL span {
   line-height: 22px;
   letter-spacing: 0.03em;
   color: #828282;
+}
+section.article-page .Arxiv h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 9px;
+  letter-spacing: 0.02em;
+  color: #828282;
+}
+section.article-page .Arxiv .btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+section.article-page .Arxiv .btn-group button:first-child {
+  width: 136px;
+  height: 40px;
+  background: #f3f1ec;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border: 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4f4f4f;
+}
+section.article-page .Arxiv .btn-group button:last-child {
+  width: 136px;
+  height: 40px;
+  background: rgba(0, 50, 78, 0.5);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  border: 0;
+  color: #ffffff;
 }
