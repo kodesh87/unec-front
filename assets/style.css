@@ -1707,11 +1707,21 @@ section.xəbərlər .top-image span {
   height: 100%;
   top: 0;
   left: 0;
-  transform: rotate(    calc((360deg / var(--num-dot) /* Number of child */) * var(--index))  );
-  -webkit-transform: rotate(;
-  -moz-transform: rotate(;
-  -ms-transform: rotate(;
-  -o-transform: rotate(;
+  transform: rotate(
+    calc((360deg / var(--num-dot) /* Number of child */) * var(--index))
+  );
+  -webkit-transform: rotate(
+    calc((360deg / var(--num-dot) /* Number of child */) * var(--index))
+  );
+  -moz-transform: rotate(
+    calc((360deg / var(--num-dot) /* Number of child */) * var(--index))
+  );
+  -ms-transform: rotate(
+    calc((360deg / var(--num-dot) /* Number of child */) * var(--index))
+  );
+  -o-transform: rotate(
+    calc((360deg / var(--num-dot) /* Number of child */) * var(--index))
+  );
 }
 .loading > *::before {
   position: absolute;
@@ -1721,10 +1731,13 @@ section.xəbərlər .top-image span {
   width: 0.1em;
   height: 0.1em;
   transform: scale(0);
-  /*Firststateisscalefrom0*/border-radius: 50%;
+  /*Firststateisscalefrom0*/
+  border-radius: 50%;
   background-color: var(--color-dot);
-  animation: scaleTo1 var(--duration) ease-in-out    calc(var(--duration) / var(--num-dot) * var(--index)) infinite reverse;
-  -webkit-animation: scaleTo1 var(--duration) ease-in-out    calc(var(--duration) / var(--num-dot) * var(--index)) infinite reverse;
+  animation: scaleTo1 var(--duration) ease-in-out
+    calc(var(--duration) / var(--num-dot) * var(--index)) infinite reverse;
+  -webkit-animation: scaleTo1 var(--duration) ease-in-out
+    calc(var(--duration) / var(--num-dot) * var(--index)) infinite reverse;
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
   -ms-transform: scale(0);
