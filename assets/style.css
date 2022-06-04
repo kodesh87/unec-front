@@ -445,6 +445,8 @@ header .mobile-menu {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.64);
 }
+/******************************* home page ********************************/
+
 /* hero-section */
 section.hero {
   background: #c4c4c4;
@@ -851,6 +853,10 @@ section.xəbərlər .title select {
   border-right: none;
   border-radius: 0;
   box-shadow: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
 
 section.xəbərlər .card span {
@@ -877,6 +883,9 @@ section.xəbərlər .card a:focus {
   section.xəbərlər #carouselExampleIndicators3 {
     height: 450px;
   }
+  section.xəbərlər .card {
+    margin-bottom: 2rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -884,28 +893,41 @@ section.xəbərlər .card a:focus {
     margin-bottom: 3rem;
   }
   section.xəbərlər #carouselExampleIndicators3 {
-    height: 1020px;
+    height: 921px;
   }
 }
 @media screen and (max-width: 767px) {
   section.xəbərlər #carouselExampleIndicators3 {
-    height: 895px;
+    height: 837px;
   }
 }
 @media screen and (max-width: 500px) {
   section.xəbərlər #carouselExampleIndicators3 {
-    height: 900px;
+    height: 740px;
   }
 }
 @media screen and (max-width: 367px) {
   section.xəbərlər #carouselExampleIndicators3 {
-    height: 880px;
+    height: 717px;
   }
 }
 @media screen and (width: 992px) {
   section.xəbərlər #carouselExampleIndicators3 {
     height: 460px;
   }
+}
+section.xəbərlər .card-body {
+  padding: 0;
+}
+section.xəbərlər .card {
+  padding: 0.3rem;
+  box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
+  border-radius: 8px;
+  border: none;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 /* Elanlar-section */
 section.elanlar {
@@ -1551,5 +1573,227 @@ footer .bottom-footer {
 @media screen and (max-width: 992px) {
   footer ul {
     margin-top: 1rem;
+  }
+}
+
+/******************************* xeberler page ********************************/
+section.xəbərlər .top-image {
+  background-image: url("images/Xeberler\ page/image 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  top: 0;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 660px) {
+  section.xəbərlər .top-image {
+    top: -22px;
+  }
+}
+@media screen and (max-width: 500px) {
+  section.xəbərlər .top-image {
+    top: -39px;
+  }
+}
+
+section.xəbərlər .top-image h2 {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 56px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-variant: small-caps;
+  color: #ffffff;
+}
+@media screen and (max-width: 992px) {
+  section.xəbərlər .top-image h2 {
+    font-size: 37px;
+  }
+}
+@media screen and (max-width: 600px) {
+  section.xəbərlər .top-image h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+@media screen and (max-width: 550px) {
+  section.xəbərlər .top-image {
+    top: -52px;
+  }
+}
+@media screen and (max-width: 420px) {
+  section.xəbərlər .top-image h2 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 420px) {
+  section.xəbərlər .top-image {
+    top: -61;
+  }
+  .breadcrumb {
+    margin-top: 0rem;
+  }
+}
+section.xəbərlər .top-image span {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+/* breadcrumb */
+.breadcrumb {
+  background: #fcfcfc;
+  mix-blend-mode: normal;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 4%);
+  border-radius: none;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  -ms-border-radius: none;
+  -o-border-radius: none;
+  margin-top: 8rem;
+}
+.breadcrumb li a {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  color: #00324e;
+  text-decoration: none;
+}
+.breadcrumb li {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #00324e;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  float: left;
+  padding-right: 0.5rem;
+  margin: 0 0.8rem;
+  color: #6c757d;
+  content: url("images/Xeberler\ page/arrow.svg");
+}
+/* loading */
+.loading {
+  font-size: 100px; /* Default value */
+  --duration: 1s; /* Default value */
+  --num-dot: 10; /* Default value */
+  --color-dot: #000; /* Default value */
+}
+.loading > * {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: rotate(    calc((360deg / var(--num-dot) /* Number of child */) * var(--index))  );
+  -webkit-transform: rotate(;
+  -moz-transform: rotate(;
+  -ms-transform: rotate(;
+  -o-transform: rotate(;
+}
+.loading > *::before {
+  position: absolute;
+  content: "";
+  top: 0.15em;
+  left: 0.45em;
+  width: 0.1em;
+  height: 0.1em;
+  transform: scale(0);
+  /*Firststateisscalefrom0*/border-radius: 50%;
+  background-color: var(--color-dot);
+  animation: scaleTo1 var(--duration) ease-in-out    calc(var(--duration) / var(--num-dot) * var(--index)) infinite reverse;
+  -webkit-animation: scaleTo1 var(--duration) ease-in-out    calc(var(--duration) / var(--num-dot) * var(--index)) infinite reverse;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+@keyframes scaleTo1 {
+  0% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+
+/*  Box style only  */
+.loading {
+  width: 1em;
+  aspect-ratio: 1;
+  position: relative;
+}
+/* Box style only */
+.loading::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  right: 1px;
+  bottom: 1px;
+  border-radius: 0.2em;
+}
+@media screen and (max-width: 992px) {
+  section.xəbərlər .top-image h2 {
+    font-size: 37px;
+  }
+}
+@media screen and (max-width: 600px) {
+  section.xəbərlər .top-image h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+@media screen and (max-width: 550px) {
+  section.xəbərlər .top-image {
+    top: -52px;
+  }
+}
+@media screen and (max-width: 420px) {
+  section.xəbərlər .top-image h2 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 420px) {
+  section.xəbərlər .top-image {
+    top: -61;
+  }
+  .breadcrumb {
+    margin-top: 0rem;
   }
 }
