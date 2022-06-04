@@ -1810,6 +1810,7 @@ section.xəbərlər .top-image span {
 /******************************* Xəbər page ********************************/
 section.article-page {
   padding: 2rem 0;
+  margin-bottom: 10rem;
 }
 section.article-page .title h2 {
   font-weight: 500;
@@ -2023,16 +2024,75 @@ section.article-page .btn-group li:hover {
 }
 section.article-page .btn-group a {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 24px;
   text-align: center;
   color: #000000;
 }
-/* prev-article */
+/* pagination */
+section.article-page .pagination {
+  border-top: 0.5px solid #828282;
+  border-bottom: 0.5px solid #828282;
+  border-radius: 0;
+  padding: 0;
+}
+section.article-page .prev-article {
+  padding-left: 0.7rem;
+}
+section.article-page .next-article {
+  padding-right: 0.7rem;
+}
+section.article-page .prev-article .prev-icon,
+section.article-page .next-article .next-icon {
+  display: flex;
+  align-items: center;
+}
+section.article-page .prev-article .prev-icon {
+  margin-right: 0.7rem;
+}
+section.article-page .next-article .next-icon {
+  margin-left: 0.7rem;
+}
 section.article-page .prev-article,
 section.article-page .next-article {
   display: flex;
+  border-radius: none;
+  flex-direction: row;
 }
+section.article-page .pagination .row .col-lg-6:first-child {
+  padding-right: 0;
+}
+section.article-page .pagination .row .col-lg-6:last-child {
+  padding-left: 0;
+}
+@media screen and (max-width: 991px) {
+  section.article-page .prev-article {
+    border-bottom: 0.5px solid #828282;
+  }
+  section.article-page .next-article {
+    border-top: 0.5px solid #828282;
+  }
+  section.article-page .pagination .row {
+    gap: 1rem;
+  }
+}
+/* prev-article */
+section.article-page .prev-article:hover,
+section.article-page .next-article:hover {
+  background: rgba(130, 130, 130, 0.25);
+}
+
+section.article-page .prev-article .card-body a,
+section.article-page .next-article .card-body a {
+  font-weight: 500;
+  font-size: 13px;
+  display: block;
+  line-height: 23px;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.65);
+}
+/* form */
 section.article-page form {
   background: #ffffff;
   box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.03), 0px 1px 3px rgba(0, 0, 0, 0.13);
@@ -2075,6 +2135,10 @@ section.article-page form .subscribe input[type="submit"] {
   text-align: center;
   letter-spacing: 0.02em;
   color: #000000;
+  -webkit-border-radius: 11.5562px;
+  -moz-border-radius: 11.5562px;
+  -ms-border-radius: 11.5562px;
+  -o-border-radius: 11.5562px;
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   section.article-page form .subscribe input[type="submit"] {
@@ -2147,124 +2211,4 @@ section.article-page .CTRL span {
   line-height: 22px;
   letter-spacing: 0.03em;
   color: #828282;
-}
-/* articles-slider */
-section.articles-slider {
-  margin-bottom: 10rem;
-}
-section.articles-slider .carousel {
-  padding: 3rem;
-}
-#articlescarousel {
-  padding-left: 0;
-  padding-right: 0;
-  max-width: 800px;
-  padding-top: 0;
-}
-section.articles-slider .carousel .card {
-  border: none;
-  border-radius: none;
-  flex-direction: row;
-  -webkit-border-radius: none;
-  -moz-border-radius: none;
-  -ms-border-radius: none;
-  -o-border-radius: none;
-  height: 108px;
-  min-height: 108px;
-}
-section.articles-slider .carousel .card:hover {
-  background: rgba(130, 130, 130, 0.25);
-}
-section.articles-slider .carousel .carousel-inner {
-  border-top: 0.5px solid #828282;
-  border-bottom: 0.5px solid #828282;
-}
-section.articles-slider .carousel .carousel-inner .col-lg-6,
-section.articles-slider .carousel .carousel-inner .col-lg-6 .col-12 {
-  padding: 0;
-}
-section.articles-slider .carousel .card .card-img-left {
-  padding-left: 3rem;
-}
-
-section.articles-slider
-  .carousel
-  .carousel-inner
-  .col-lg-6:last-child
-  .card
-  .card-img-left,
-section.articles-slider
-  .carousel
-  .carousel-inner
-  .col-lg-6:last-child
-  .col-12:last-child
-  .card
-  .card-img-left {
-  padding-left: 0;
-  padding-right: 3rem;
-}
-section.articles-slider .carousel .card .card-body a {
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 14px;
-  text-decoration: none;
-  letter-spacing: 0.03em;
-  color: rgba(0, 0, 0, 0.65);
-}
-section.articles-slider .carousel .card .card-body {
-  padding: 0.8rem 1rem;
-}
-section.articles-slider .carousel-control-prev-icon {
-  background-image: url("images/Xəbər\ page/prev.svg") !important;
-}
-
-section.articles-slider .carousel-control-next-icon {
-  background-image: url("images/Xəbər\ page/next.svg") !important;
-}
-section.articles-slider .carousel-control-prev {
-  bottom: 50px;
-  left: -46px;
-}
-section.articles-slider .carousel-control-next {
-  right: -46px;
-  bottom: 50px;
-}
-@media screen and (max-width: 991px) {
-  section.articles-slider .carousel-item .row {
-    gap: 1.5rem;
-  }
-  section.articles-slider .carousel .carousel-inner .col-lg-6:last-child .card,
-  section.articles-slider
-    .carousel
-    .carousel-inner
-    .col-lg-6:last-child
-    .col-12:last-child
-    .card {
-    border-top: 0.5px solid #828282;
-  }
-  section.articles-slider .carousel .carousel-inner .col-lg-6:first-child .card,
-  section.articles-slider
-    .carousel
-    .carousel-inner
-    .col-lg-6:first-child
-    .col-12:first-child
-    .card {
-    border-bottom: 0.5px solid #828282;
-  }
-  section.articles-slider .carousel-control-next {
-    top: 135px;
-  }
-  section.articles-slider .carousel-control-prev {
-    right: -46px;
-    bottom: 183px;
-  }
-}
-@media screen and (max-width: 600px) {
-  section.articles-slider .carousel-control-next {
-    right: -21px;
-  }
-  section.articles-slider .carousel-control-prev {
-    /* right: -46px; */
-    bottom: 183px;
-  }
 }
