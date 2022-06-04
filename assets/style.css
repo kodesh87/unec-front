@@ -1140,6 +1140,38 @@ section.sosial {
   padding: 3rem 0;
   background: #fff;
 }
+section.sosial h2 {
+  font-weight: 600;
+  font-size: 81px;
+  line-height: 67px;
+  color: #000000;
+}
+section.sosial p {
+  font-weight: 100;
+  font-size: 48px;
+  line-height: 67px;
+  color: #000000;
+}
+section.sosial .images-group div,
+section.sosial .images-group .images div {
+  position: relative;
+}
+section.sosial .images-group .images img,
+section.sosial .images-group img {
+  display: block;
+}
+section.sosial .images-group div .icon {
+  position: absolute;
+  bottom: 14px;
+  left: 18px;
+}
+section.sosial .images-group {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
 /* Tələbələrin-section */
 section.talabalarin {
   padding: 4rem 0;
@@ -1364,6 +1396,43 @@ div.sites {
   right: 0;
   margin-left: auto;
   margin-right: auto;
+}
+div.sites .sites-mobile {
+  text-align: center;
+}
+
+div.sites .sites-mobile .carousel-indicators {
+  bottom: -27px;
+}
+div.sites .sites-group a,
+div.sites .sites-mobile a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  color: #828282;
+}
+div.sites .sites-group a:hover,
+div.sites .sites-mobile a:hover,
+div.sites .sites-mobile a:focus,
+div.sites .sites-group a:focus {
+  color: #006be8;
+}
+@media screen and (max-width: 814px) {
+  div.sites .sites-desktop {
+    display: none;
+  }
+  div.sites {
+    max-width: 350px;
+    top: -179px;
+    height: 250px;
+  }
+}
+@media screen and (min-width: 815px) {
+  div.sites .sites-mobile {
+    display: none;
+  }
 }
 /* Footer */
 footer {
