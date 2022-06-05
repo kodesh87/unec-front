@@ -2086,8 +2086,6 @@ section.article-page form .subscribe input[type="submit"] {
   background: #f3f1ec;
   border: 0.5px solid #f3f1ec;
   border-radius: 11.5562px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
   margin-left: -55px;
   padding: 10px;
   padding-left: 20px;
@@ -2102,6 +2100,8 @@ section.article-page form .subscribe input[type="submit"] {
   -moz-border-radius: 11.5562px;
   -ms-border-radius: 11.5562px;
   -o-border-radius: 11.5562px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   section.article-page form .subscribe input[type="submit"] {
