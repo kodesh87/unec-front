@@ -2213,12 +2213,15 @@ section.article-page .Arxiv .btn-group button:last-child {
   color: #ffffff;
 }
 /* datepicker */
-#datepicker .ui-datepicker-inline {
+.ui-datepicker-inline {
   margin: 1.3rem auto;
   width: 100%;
   border: none;
 }
-#datepicker .ui-datepicker .ui-datepicker-header {
+.ui-widget.ui-widget-content {
+  border: none;
+}
+.ui-datepicker .ui-datepicker-header {
   border: none;
   background: #fff;
 }

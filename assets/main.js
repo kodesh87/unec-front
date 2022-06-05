@@ -56,3 +56,19 @@ $("section.elanlar .carousel .carousel-item").each(function () {
     next.children(":first-child").clone().appendTo($(this));
   }
 });
+// xabar-page
+$(function () {
+  $("#xaberdatepicker").datepicker({
+    showOtherMonths: true,
+    firstDay: 1,
+    selectOtherMonths: true,
+  });
+});
+// filterdatepicker
+$(function () {
+  $("#filterdatepicker").datepicker({
+    showOtherMonths: true,
+    firstDay: 1,
+    selectOtherMonths: true,
+  });
+});
