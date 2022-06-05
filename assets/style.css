@@ -2212,3 +2212,79 @@ section.article-page .Arxiv .btn-group button:last-child {
   border: 0;
   color: #ffffff;
 }
+/* datepicker */
+#datepicker .ui-datepicker-inline {
+  margin: 1.3rem auto;
+  width: 100%;
+  border: none;
+}
+#datepicker .ui-datepicker .ui-datepicker-header {
+  border: none;
+  background: #fff;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+  border: none;
+  background: #fff;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button {
+  border: none;
+  background: #fff;
+  text-align: center;
+  padding: 6px;
+}
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+  background: #fff;
+  color: #4f4f4f;
+  text-align: center;
+  padding: 6px;
+}
+.ui-state-default:focus,
+.ui-widget-content .ui-state-default:focus,
+.ui-widget-header .ui-state-default:focus,
+.ui-button:focus,
+.ui-state-default.active,
+.ui-widget-content .ui-state-default.active,
+.ui-widget-header .ui-state-default.active,
+.ui-button.active {
+  background: rgba(0, 50, 78, 0.5);
+  border-radius: 50%;
+  color: #fff;
+  padding: 6px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.ui-datepicker-current-day a {
+  background: #f3f1ec;
+  border-radius: 50%;
+  color: rgba(0, 50, 78, 0.5);
+  padding: 6px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.ui-datepicker-current-day .ui-state-active,
+.ui-datepicker-other-month .ui-state-active {
+  background: rgba(0, 50, 78, 0.5);
+  border-radius: 50%;
+  color: #fff;
+}
+.ui-datepicker-other-month .ui-priority-secondary {
+  color: #4f4f4f;
+}
+.ui-datepicker-today .ui-state-active {
+  background-color: #f3f1ec;
+  color: rgba(0, 50, 78, 0.5);
+}
