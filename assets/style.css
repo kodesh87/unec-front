@@ -1599,6 +1599,7 @@ footer .bottom-footer {
   font-weight: 500;
   font-size: 64px;
   line-height: 56px;
+  text-align: center;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-variant: small-caps;
@@ -1685,6 +1686,18 @@ footer .bottom-footer {
   transform: rotate(
     calc((360deg / var(--num-dot) /* Number of child */) * var(--index))
   );
+  -webkit-transform: rotate(
+    calc((360deg / var(--num-dot) /* Number of child */) * var(--index))
+  );
+  -moz-transform: rotate(
+    calc((360deg / var(--num-dot) /* Number of child */) * var(--index))
+  );
+  -ms-transform: rotate(
+    calc((360deg / var(--num-dot) /* Number of child */) * var(--index))
+  );
+  -o-transform: rotate(
+    calc((360deg / var(--num-dot) /* Number of child */) * var(--index))
+  );
 }
 .loading > *::before {
   position: absolute;
@@ -1693,18 +1706,33 @@ footer .bottom-footer {
   left: 0.45em;
   width: 0.1em;
   height: 0.1em;
-  transform: scale(0); /* First state is scale from 0 */
+  transform: scale(0);
+  /*Firststateisscalefrom0*/
   border-radius: 50%;
   background-color: var(--color-dot);
   animation: scaleTo1 var(--duration) ease-in-out
+    calc(var(--duration) / var(--num-dot) * var(--index)) infinite reverse;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  -webkit-animation: scaleTo1 var(--duration) ease-in-out
     calc(var(--duration) / var(--num-dot) * var(--index)) infinite reverse;
 }
 @keyframes scaleTo1 {
   0% {
     transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
   }
   100% {
     transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
   }
 }
 
@@ -1714,6 +1742,7 @@ footer .bottom-footer {
   aspect-ratio: 1;
   border-radius: 0.2em;
   position: relative;
+  margin: auto;
 }
 /* Box style only */
 .loading::before {
@@ -2090,14 +2119,16 @@ section.article-page form .subscribe input[type="submit"] {
 section.article-page form ul {
   list-style: none;
 }
-section.article-page form ul h2 {
+section.article-page form ul h2,
+section.article-page form .form-group label {
   font-weight: 700;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 0.02em;
   color: #000000;
 }
-section.article-page form ul li {
+section.article-page form ul li,
+section.article-page form .form-group .form-control option {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -2105,12 +2136,25 @@ section.article-page form ul li {
   cursor: pointer;
   padding: 8px 10px 8px 20px;
 }
-section.article-page form ul li:hover {
+section.article-page form ul li:hover,
+section.article-page form .form-group select.form-control option:hover,
+section.article-page form .form-group select.form-control option:focus,
+section.article-page form .form-group select.form-control option:checked {
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
   background: #f3f1ec;
   color: #000000;
+}
+select:focus {
+  box-shadow: none;
+}
+select.form-control[multiple],
+select.form-control[size] {
+  height: 14rem;
+  overflow-y: auto;
+  box-shadow: none;
+  border: none;
 }
 section.article-page .public {
   margin: 1.7rem 0 1rem;
@@ -2399,4 +2443,184 @@ section.users form button span {
 }
 section.users .users-list {
   padding: 3rem 0;
+}
+@media screen and (max-width: 991px) {
+  section.users .users-list {
+    padding: 1rem 0;
+  }
+}
+section.users .users-list .user .left img {
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+section.users .users-list .user .left span {
+  display: block;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  color: #116fff;
+}
+section.users .users-list .user .left span:first-of-type {
+  margin-bottom: 1.2rem;
+}
+section.users .users-list .user .info h2 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+section.users .users-list .user .info ul {
+  list-style: none;
+}
+section.users .users-list .user .info ul li {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+section.users .users-list .user .info ul li a {
+  color: #116fff;
+  text-decoration: underline;
+}
+section.users .users-list .user .info .tag-group .row {
+  justify-content: space-evenly;
+}
+section.users .users-list .user .info .tag-group li {
+  background: #ffffff;
+  border: 2px solid #e0ded9;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  width: 175px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+section.users .users-list .user .info .tag-group li a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-decoration: none;
+}
+section.users .users-list .user {
+  margin-bottom: 3rem;
+  padding: 1rem 1rem 0;
+}
+section.users .users-list .user:hover {
+  background: rgba(217, 217, 217, 0.15);
+  cursor: pointer;
+}
+/* filter */
+section.users .filter {
+  background: #ffffff;
+  box-shadow: 0px 3px 14px rgb(0 0 0 / 3%), 0px 1px 3px rgb(0 0 0 / 13%);
+  padding: 3.5rem 2rem 2rem;
+}
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border: 0;
+  outline: 0;
+  box-shadow: 0px 3px 14px rgba(19, 10, 46, 0.03),
+    0px 1px 3px rgba(19, 10, 46, 0.13);
+}
+section.users .form-control {
+  box-shadow: 0px 3px 14px rgba(19, 10, 46, 0.03),
+    0px 1px 3px rgba(19, 10, 46, 0.13);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+section.users select {
+  background-image: url("images/select.svg");
+  background-position: calc(100% - 20px) 20px;
+  height: 3rem;
+  background-size: 10px 10px, 10px 10px;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+section.users .filter h2 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 9px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin-bottom: 3rem;
+}
+section.users .filter .form-group {
+  margin: 2rem 0;
+}
+section.users .filter .form-group label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 9px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+section.users .filter .form-group option {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #19181a;
+}
+section.users .filter .form-group select {
+  border: 0;
+}
+section.users .filter .form-group input[type="search"] {
+  background: #fff;
+  border-bottom: 1px solid #acb1c6;
+  border-radius: 0;
+  padding-left: 10px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+section.users .filter .CTRL h2 {
+  margin-bottom: 1rem;
+}
+section.users .filter .CTRL p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-bottom: 0;
+}
+section.users .filter .CTRL span {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+section.users .filter form ul li,
+section.users .filter .form-group .form-control option {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #19181a;
+  cursor: pointer;
+  padding: 8px 10px 8px 20px;
+}
+section.users .filter form ul li:hover,
+section.users .filter form .form-group select.form-control option:hover,
+section.users .filter form .form-group select.form-control option:focus,
+section.users .filter form .form-group select.form-control option:checked {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  background: #f3f1ec;
+  color: #000000;
 }
