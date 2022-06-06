@@ -2375,6 +2375,7 @@ section.alphabet .horizontal-scroll__item {
   justify-content: center;
   scroll-snap-align: start;
 }
+/********************* desktop-2 page ***************************/
 /* users */
 section.users {
   padding: 1rem 0;
@@ -2391,6 +2392,12 @@ section.users form input[type="search"] {
   box-shadow: none;
   padding-left: 22px;
 }
+@media screen and (max-width: 500px) {
+  section.users form input[type="search"] {
+    width: 86%;
+  }
+}
+
 section.users form input[type="search"]::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #acb1c6;
@@ -2622,5 +2629,197 @@ section.users .filter form .form-group select.form-control option:checked {
   font-size: 14px;
   line-height: 24px;
   background: #f3f1ec;
+  color: #000000;
+}
+/******************************* desktop-4 page ********************************/
+section.user {
+  padding: 3rem 0;
+}
+@media screen and (max-width: 992px) {
+  section.user {
+    padding: 0;
+  }
+}
+section.user .user {
+  background: #ffffff;
+  box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.03), 0px 1px 3px rgba(0, 0, 0, 0.13);
+  padding: 2rem 1rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+section.user ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+section.user .user img {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+section.user .user .language h2,
+section.user .user .Contacts h2,
+section.user .user .supervisor h2,
+section.user .user .interests h2,
+section.user .user .ctrl h2 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #000000;
+}
+section.user .user .language a {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #116fff;
+}
+section.user .user .Contacts span {
+  display: block;
+  color: #116fff;
+  font-size: 14px;
+}
+section.user .user ul li {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+section.user .user ul li span {
+  color: #116fff;
+  margin-left: 3px;
+}
+section.user .user ul li:last-child {
+  margin-bottom: 0;
+}
+section.user .user .supervisor a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+section.user .user .ctrl h3 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 9px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+section.user .user .ctrl p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-bottom: 0;
+}
+section.user .user .ctrl span {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+/* user-info */
+section.user .user-info {
+  padding: 2rem 0;
+}
+section.user .user-info .info h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+section.user .user-info .info ul {
+  margin: 1rem 0;
+}
+section.user .user-info .info ul li {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+section.user .user-info .info ul li a {
+  color: #116fff;
+  text-decoration: underline;
+}
+section.user .user-info .info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+section.user .user-info .tabs {
+  padding: 1rem 0;
+}
+section.user .user-info .tabs ul {
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  section.user .user-info .tabs ul {
+    justify-content: initial;
+  }
+}
+section.user .user-info .tabs ul li a {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: #2a374e;
+  padding-left: 0;
+}
+section.user .user-info .tabs ul li a:hover {
+  color: #2f80ed;
+  border: none;
+}
+section.user .user-info .tabs ul li a.active {
+  color: #98a2b3;
+}
+section.user .user-info .tabs .nav-tabs .nav-item a.active {
+  border: none;
+}
+section.user .nav-tabs .nav-link {
+  margin-bottom: 0;
+  border: none;
+  margin-bottom: 0.6rem;
+}
+section.user .tab-content ul {
+  padding: 2rem 0;
+}
+section.user .tab-content ul li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+section.user .tab-content .date {
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  color: #4f4f4f;
+}
+section.user .tab-content .date span {
+  display: block;
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 8px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #4f4f4f;
+}
+section.user .tab-content ul li p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
   color: #000000;
 }
