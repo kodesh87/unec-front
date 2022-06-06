@@ -2119,16 +2119,16 @@ section.article-page form .subscribe input[type="submit"] {
 section.article-page form ul {
   list-style: none;
 }
-section.article-page form ul h2,
-section.article-page form .form-group label {
+form ul h2,
+form .form-group label {
   font-weight: 700;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 0.02em;
   color: #000000;
 }
-section.article-page form ul li,
-section.article-page form .form-group .form-control option {
+form ul li,
+form .form-group .form-control option {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -2136,10 +2136,10 @@ section.article-page form .form-group .form-control option {
   cursor: pointer;
   padding: 8px 10px 8px 20px;
 }
-section.article-page form ul li:hover,
-section.article-page form .form-group select.form-control option:hover,
-section.article-page form .form-group select.form-control option:focus,
-section.article-page form .form-group select.form-control option:checked {
+form ul li:hover,
+form .form-group select.form-control option:hover,
+form .form-group select.form-control option:focus,
+form .form-group select.form-control option:checked {
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
@@ -2173,17 +2173,17 @@ section.article-page .public span {
   letter-spacing: 0.02em;
   color: #828282;
 }
-section.article-page .CTRL {
+.CTRL {
   margin-top: 3rem;
 }
-section.article-page .CTRL h2 {
+.CTRL h2 {
   font-weight: 400;
   font-size: 30px;
   line-height: 9px;
   letter-spacing: 0.02em;
   color: #828282;
 }
-section.article-page .CTRL p {
+.CTRL p {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
@@ -2191,25 +2191,25 @@ section.article-page .CTRL p {
   color: #828282;
   margin: 1rem 0 0;
 }
-section.article-page .CTRL span {
+.CTRL span {
   font-weight: 800;
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 0.03em;
   color: #828282;
 }
-section.article-page .Arxiv h2 {
+.Arxiv h2 {
   font-weight: 700;
   font-size: 16px;
   line-height: 9px;
   letter-spacing: 0.02em;
   color: #828282;
 }
-section.article-page .Arxiv .btn-group {
+.Arxiv .btn-group {
   display: flex;
   justify-content: space-between;
 }
-section.article-page .Arxiv .btn-group button:first-child {
+.Arxiv .btn-group button:first-child {
   width: 136px;
   height: 40px;
   background: #f3f1ec;
@@ -2224,7 +2224,7 @@ section.article-page .Arxiv .btn-group button:first-child {
   line-height: 24px;
   color: #4f4f4f;
 }
-section.article-page .Arxiv .btn-group button:last-child {
+.Arxiv .btn-group button:last-child {
   width: 136px;
   height: 40px;
   background: rgba(0, 50, 78, 0.5);
@@ -2234,6 +2234,10 @@ section.article-page .Arxiv .btn-group button:last-child {
   line-height: 24px;
   border: 0;
   color: #ffffff;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 /* datepicker */
 .ui-datepicker-inline {
@@ -2265,7 +2269,7 @@ html .ui-button.ui-state-disabled:active {
   border: none;
   background: #fff;
   text-align: center;
-  padding: 6px;
+  padding: 7px 5px;
 }
 html .ui-button.ui-state-disabled:hover,
 html .ui-button.ui-state-disabled:active {
@@ -2538,7 +2542,7 @@ section.users .filter {
   box-shadow: 0px 3px 14px rgba(19, 10, 46, 0.03),
     0px 1px 3px rgba(19, 10, 46, 0.13);
 }
-section.users .form-control {
+.form-control {
   box-shadow: 0px 3px 14px rgba(19, 10, 46, 0.03),
     0px 1px 3px rgba(19, 10, 46, 0.13);
   border-radius: 8px;
@@ -2547,16 +2551,16 @@ section.users .form-control {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
 }
-section.users select {
+select {
   background-image: url("images/select.svg");
-  background-position: calc(100% - 20px) 20px;
+  background-position: calc(100% - 20px) 15px;
   height: 3rem;
   background-size: 10px 10px, 10px 10px;
   background-repeat: no-repeat;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-section.users .filter h2 {
+.filter h2 {
   font-weight: 400;
   font-size: 30px;
   line-height: 9px;
@@ -2565,23 +2569,23 @@ section.users .filter h2 {
   color: #000000;
   margin-bottom: 3rem;
 }
-section.users .filter .form-group {
+.filter .form-group {
   margin: 2rem 0;
 }
-section.users .filter .form-group label {
+.filter .form-group label {
   font-weight: 700;
   font-size: 16px;
   line-height: 9px;
   letter-spacing: 0.02em;
   color: #000000;
 }
-section.users .filter .form-group option {
+.filter .form-group option {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: #19181a;
 }
-section.users .filter .form-group select {
+.filter .form-group select {
   border: 0;
 }
 section.users .filter .form-group input[type="search"] {
@@ -2822,4 +2826,172 @@ section.user .tab-content ul li p {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #000000;
+}
+/********************************** Tədbİrlər-page ********************************/
+/* calender-section */
+section.calender-section {
+  padding: 2rem 0;
+}
+section.calender-section .filter {
+  background: #ffffff;
+  box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.03), 0px 1px 3px rgba(0, 0, 0, 0.13);
+  padding: 2rem;
+}
+section.calender-section .filter .subscribe input[type="email"] {
+  border: 1.15562px solid #f3f1ec;
+  border-radius: 11.5562px;
+  padding: 10px;
+  padding-left: 20px;
+  -webkit-border-radius: 11.5562px;
+  -moz-border-radius: 11.5562px;
+  -ms-border-radius: 11.5562px;
+  -o-border-radius: 11.5562px;
+}
+section.calender-section .filter .subscribe input[type="submit"] {
+  background: #f3f1ec;
+  border: 0.5px solid #f3f1ec;
+  border-radius: 11.5562px;
+  margin-left: -55px;
+  padding: 10px;
+  padding-left: 20px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 12.7118px;
+  line-height: 9px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+  -webkit-border-radius: 11.5562px;
+  -moz-border-radius: 11.5562px;
+  -ms-border-radius: 11.5562px;
+  -o-border-radius: 11.5562px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+section.calender-section .filter .subscribe {
+  display: flex;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  section.calender-section .filter .subscribe input[type="submit"] {
+    margin-left: -110px;
+  }
+}
+section.calender-section .filter .title h2 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 9px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin: 3rem 0;
+}
+.CTRL h2 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 9px;
+  letter-spacing: 0.02em;
+  color: #000;
+  text-align: left;
+  margin-bottom: 0;
+}
+/* calender-section */
+.calender-section .date-item {
+  margin-bottom: 1rem;
+}
+.calender-section .date-item .date h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #e0ded9;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 991px) {
+  .calender-section .date-item .date h2 {
+    text-align: left;
+  }
+}
+.calender-section .date-item .result-item {
+  display: grid;
+  padding: 1rem 0;
+  grid-template-columns: 1fr 6fr 2fr;
+  padding: 1rem 0;
+}
+@media screen and (max-width: 991px) {
+  .calender-section .date-item .result-item {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 575px) {
+  .calender-section .fixpadding {
+    margin: 0;
+  }
+}
+.calender-section .date-item .result-item .btn-group {
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
+.calender-section .date-item .result-item .btn-group .row {
+  gap: 1rem;
+  justify-content: center;
+}
+.calender-section .date-item .result-item .btn-group a {
+  background: #ffffff;
+  border: 2px solid #e0ded9;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  color: #000000;
+}
+.calender-section .date-item .result-item .btn-group a:hover,
+.calender-section .date-item .result-item .btn-group a:focus {
+  background: #e0ded9;
+  border: 2px solid #e0ded9;
+}
+.calender-section .date-item .result-item .date span {
+  display: block;
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 8px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #4f4f4f;
+}
+.calender-section .date-item .result-item .date {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #4f4f4f;
+}
+.calender-section .date-item .result-item .content p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+.calender-section .date-item .result-item .content span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  color: #828282;
+}
+.calender-section .date-item .result-item .name {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  color: #9b51e0;
 }
