@@ -94,6 +94,7 @@ header {
 .navbar-desktop ul li a:focus:before {
   content: url("images/Vector\ 1.svg");
 }
+
 .top-header .icons li a {
   font-size: 12px;
 }
@@ -280,6 +281,10 @@ header {
   display: block;
 }
 
+.dropdown-nav .menu-toggled:hover .menu-content {
+  display: block;
+}
+
 .dropdown-nav .navbar-nav .nav-link {
   font-weight: 400;
   font-size: 15px;
@@ -288,6 +293,15 @@ header {
   align-items: center;
   letter-spacing: 0.03em;
   color: rgba(0, 0, 0, 0.65);
+}
+.dropdown-nav .navbar-nav .nav-link:hover,
+.dropdown-nav .navbar-nav .nav-link:active,
+.dropdown-nav .navbar-nav .nav-link:focus {
+  color: rgba(0, 0, 0, 0.411);
+}
+.dropdown-nav .navbar-nav .nav-link:active:before,
+.dropdown-nav .navbar-nav .nav-link:focus:before {
+  content: none;
 }
 .dropdown-nav .navbar-nav {
   gap: 2rem;
