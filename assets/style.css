@@ -1330,7 +1330,8 @@ section.faxri .carousel-indicators {
 .carousel-indicators li {
   background-color: #bdbdbd;
 }
-section.faxri #faxricarousel {
+section.faxri #faxricarousel,
+section.faxri #faxricarousel2 {
   height: 285px;
   background: #f3f1ec;
 }
