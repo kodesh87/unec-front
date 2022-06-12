@@ -2650,22 +2650,47 @@ section.users .filter form .form-group select.form-control option:checked {
   background: #f3f1ec;
   color: #000000;
 }
-/******************************* desktop-4 page ********************************/
+/******************************* desktop-5 page ********************************/
 section.user {
-  padding: 3rem 0;
+  padding: 1rem 0 3rem 0;
+  position: relative;
 }
-@media screen and (max-width: 992px) {
-  section.user {
-    padding: 0;
-  }
+section.user .box {
+  position: relative;
 }
+section.user .box:before {
+  content: "";
+  position: absolute;
+  background: #f3f1ec;
+  box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.03), 0px 1px 3px rgba(0, 0, 0, 0.13);
+  width: 100%;
+  height: 200px;
+  z-index: 1;
+}
+
 section.user .user {
-  background: #ffffff;
   box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.03), 0px 1px 3px rgba(0, 0, 0, 0.13);
   padding: 2rem 1rem 5rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+section.user .user .image {
+  z-index: 2;
+}
+section.user .user .name h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+section.user .user .name span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #828282;
 }
 section.user ul {
   list-style: none;
@@ -2675,10 +2700,20 @@ section.user .user img {
   display: block;
   width: 80%;
   margin: auto;
+  height: 215px;
+  max-width: 255px;
+}
+@media (max-width: 576px) {
+  section.user .user img {
+    max-width: 185px;
+    height: 152px;
+  }
+  section.user .box:before {
+    height: 152px;
+  }
 }
 section.user .user .language h2,
 section.user .user .Contacts h2,
-section.user .user .supervisor h2,
 section.user .user .interests h2,
 section.user .user .ctrl h2 {
   font-weight: 700;
@@ -2687,6 +2722,30 @@ section.user .user .ctrl h2 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #000000;
+}
+section.user .user .interests ul li {
+  background: #ffffff;
+  border: 2px solid #e0ded9;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  width: 175px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.user .user .interests ul li a {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-decoration: none;
 }
 section.user .user .language a {
   text-transform: uppercase;
@@ -2712,12 +2771,6 @@ section.user .user ul li span {
 }
 section.user .user ul li:last-child {
   margin-bottom: 0;
-}
-section.user .user .supervisor a {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 19px;
-  text-transform: uppercase;
 }
 section.user .user .ctrl h3 {
   font-weight: 400;
@@ -2747,12 +2800,25 @@ section.user .user .ctrl span {
 section.user .user-info {
   padding: 2rem 0;
 }
+section.user .user-info .info {
+  height: auto;
+  margin-bottom: 4rem;
+  z-index: 2;
+  position: relative;
+}
 section.user .user-info .info h2 {
   font-weight: 600;
   font-size: 24px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #000000;
+}
+section.user .user-info .info span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #828282;
 }
 section.user .user-info .info ul {
   margin: 1rem 0;
@@ -2778,6 +2844,25 @@ section.user .user-info .info p {
 section.user .user-info .tabs {
   padding: 1rem 0;
 }
+section.user .user-info .tabs h2 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin-top: 2rem;
+}
+section.user .user-info .info h3 {
+  font-weight: 700;
+  font-size: 63px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: #2f80ed;
+  opacity: 0.15;
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+}
 section.user .user-info .tabs ul {
   justify-content: space-between;
 }
@@ -2792,16 +2877,18 @@ section.user .user-info .tabs ul li a {
   line-height: 22px;
   color: #2a374e;
   padding-left: 0;
+  padding-bottom: 10px;
+  margin-bottom: 0;
 }
 section.user .user-info .tabs ul li a:hover {
-  color: #2f80ed;
-  border: none;
-}
-section.user .user-info .tabs ul li a.active {
   color: #98a2b3;
 }
+section.user .user-info .tabs ul li a.active {
+  color: #2f80ed;
+}
+
 section.user .user-info .tabs .nav-tabs .nav-item a.active {
-  border: none;
+  border-bottom: 2px solid #2f80ed;
 }
 section.user .nav-tabs .nav-link {
   margin-bottom: 0;
@@ -2809,12 +2896,25 @@ section.user .nav-tabs .nav-link {
   margin-bottom: 0.6rem;
 }
 section.user .tab-content ul {
-  padding: 2rem 0;
+  padding: 1rem 0;
+  position: relative;
+}
+section.user .tab-content ul::before {
+  content: "";
+  border-left: 0.5px solid #8a8a8a;
+  position: absolute;
+  left: 67px;
+  height: 100%;
+}
+section.user .tab-content ul li:first-child:before {
+  border-color: #000;
+}
+section.user .tab-content ul li:last-child p {
+  margin-bottom: 0;
 }
 section.user .tab-content ul li {
   display: flex;
   gap: 1rem;
-  margin-bottom: 1rem;
 }
 section.user .tab-content .date {
   text-align: center;
@@ -2822,25 +2922,42 @@ section.user .tab-content .date {
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
-
   color: #4f4f4f;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  max-width: 68px;
+}
+section.user .tab-content .date::after {
+  content: "";
+  position: absolute;
+  left: 62px;
+  width: 10px;
+  height: 10px;
+  background-color: #8a8a8a;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 section.user .tab-content .date span {
   display: block;
+  position: relative;
   font-weight: 400;
-  font-size: 30px;
-  margin-bottom: 8px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 24px;
   letter-spacing: 0.03em;
-  text-align: left;
-  color: #4f4f4f;
+  color: rgba(0, 0, 0, 0.5);
+  max-width: 35px;
 }
 section.user .tab-content ul li p {
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #000000;
+  margin: 1.5rem 0;
 }
 /********************************** Tədbİrlər-page ********************************/
 /* calender-section */
