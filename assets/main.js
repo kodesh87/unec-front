@@ -62,6 +62,8 @@ $(function () {
     showOtherMonths: true,
     firstDay: 1,
     selectOtherMonths: true,
+    changeMonth: true,
+    changeYear: true,
   });
 });
 // filterdatepicker
@@ -70,5 +72,27 @@ $(function () {
     showOtherMonths: true,
     firstDay: 1,
     selectOtherMonths: true,
+    changeMonth: true,
+    changeYear: true,
+  });
+});
+// eventCalender
+$(function () {
+  $("#eventCalender").datepicker({
+    showOtherMonths: true,
+    changeMonth: true,
+    changeYear: false,
+    showButtonPanel: false,
+    dateFormat: "MM yy",
+    onClose: function (dateText, inst) {
+      $(this).datepicker(
+        "setDate",
+        new Date(inst.selectedYear, inst.selectedMonth, 1)
+      );
+    },
+  });
+  $("#eventCalender").on("change", function () {
+    var selected = $(this).val();
+    document.getElementById("eventCalenderResult").innerHTML = selected;
   });
 });
