@@ -3333,19 +3333,35 @@ section.bey-section form .form-title ul li a:hover {
 section.bey-section .CTRL {
   margin-top: 2rem;
 }
-section.bey-section .accordion .card .card-header .btn-header-link:after {
-  content: "\f107";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  float: right;
+section.bey-section .accordion .card .card-header button:after {
+  content: url("images/Desktop-4/chevron-down.svg");
+  left: 17px;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
 }
 
 section.bey-section
   .accordion
   .card
   .card-header
-  .btn-header-link.collapsed:after {
-  content: "\f106";
+  button[aria-expanded="true"]:after {
+  content: url("images/Desktop-4/chevron-up.svg");
+}
+section.bey-section .accordion .card .card-header button img {
+  display: none;
+  width: 22px;
+  margin-left: 1rem;
+}
+section.bey-section
+  .accordion
+  .card
+  .card-header
+  button[aria-expanded="true"]
+  img {
+  display: block;
 }
 section.bey-section .left {
   margin-bottom: 2rem;
@@ -3409,4 +3425,64 @@ section.bey-section .left article p {
   text-align: justify;
   letter-spacing: 0.07em;
   color: #000000;
+}
+section.bey-section .accordion .card {
+  background: #fff;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 1px 2px rgba(97, 97, 97, 0.2),
+    0px 2px 4px rgba(97, 97, 97, 0.2);
+  border-radius: 8px;
+}
+section.bey-section .accordion .card-header {
+  background: #ffffff;
+}
+section.bey-section .accordion .card .card-body {
+  background-color: #fff;
+}
+.bey-section .accordion .card .card-header button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.0168em;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #000000;
+  margin-left: 10px;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+  -moz-font-feature-settings: "tnum" on, "lnum" on;
+}
+@media screen and (max-width: 767px) {
+  .bey-section .accordion .card .card-header button {
+    font-size: 12px;
+  }
+}
+section.bey-section .accordion .card .card-body .row {
+  margin-bottom: 1rem;
+  align-items: center;
+}
+section.bey-section .accordion .card .card-body .row p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.0168em;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #000000;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+  -moz-font-feature-settings: "tnum" on, "lnum" on;
+}
+section.bey-section .accordion .card .card-body .row .col-10 {
+  padding-left: 0;
+}
+section.bey-section .accordion .card .card-body h3 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.0168em;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #000000;
+  margin-bottom: 2rem;
 }
