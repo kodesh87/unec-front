@@ -2079,7 +2079,7 @@ section.article-page .next-article .card-body a {
   color: rgba(0, 0, 0, 0.65);
 }
 /* form */
-section.article-page form {
+form {
   background: #ffffff;
   box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.03), 0px 1px 3px rgba(0, 0, 0, 0.13);
   padding: 2rem;
@@ -2131,7 +2131,7 @@ section.article-page form .subscribe input[type="submit"] {
     margin-left: -110px;
   }
 }
-section.article-page form ul {
+form ul {
   list-style: none;
 }
 form ul h2,
@@ -3216,4 +3216,130 @@ section.calender-section .filter .title h2 {
   border-radius: 50%;
   color: #fff;
   width: 35px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/******************************* desktop-4 page ********************************/
+section.bey-section {
+  padding: 2rem 0;
+}
+form .form-title {
+  padding: 1rem 0;
+}
+form .form-title h2 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+form .form-title p,
+form .form-title span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  display: block;
+}
+form .form-title a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: #116fff;
+  -moz-text-decoration-line: underline;
+}
+section.bey-section form .form-title ul li {
+  padding-left: 0;
+}
+section.bey-section form .form-title ul li:hover {
+  background: none;
+  color: #000000;
+}
+section.bey-section form .form-title ul li a:hover {
+  color: #116fff;
+  text-decoration-line: underline;
+  color: #116fff;
+  -moz-text-decoration-line: underline;
+}
+section.bey-section .CTRL {
+  margin-top: 2rem;
+}
+section.bey-section .accordion .card .card-header .btn-header-link:after {
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  float: right;
+}
+
+section.bey-section
+  .accordion
+  .card
+  .card-header
+  .btn-header-link.collapsed:after {
+  content: "\f106";
+}
+section.bey-section .left h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.07em;
+  color: #000000;
+}
+@media screen and (max-width: 767px) {
+  section.bey-section .left h2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  section.bey-section {
+    padding: 1rem 0 2rem;
+  }
+}
+section.bey-section .left img {
+  width: 100%;
+  max-width: 100%;
+}
+@media screen and (max-width: 350px) {
+  .breadcrumb li {
+    font-size: 10px;
+  }
+}
+section.bey-section .left .info {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: space-between;
+  align-items: center;
+}
+section.bey-section .left .info .links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+section.bey-section .left .info .links img {
+  width: 20px;
+  height: 20px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+section.bey-section .left .info span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 32px;
+  letter-spacing: 0.07em;
+  color: #828282;
+}
+section.bey-section .left article p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: justify;
+  letter-spacing: 0.07em;
+  color: #000000;
 }
