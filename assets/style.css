@@ -419,7 +419,7 @@ header .mobile-menu {
   color: #006be8;
 }
 .accordion .card .card-header button:after {
-  content: url("images/—.svg");
+  content: url("images/plus.svg");
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   -moz-transform: rotate(90deg);
