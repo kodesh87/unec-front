@@ -1612,7 +1612,7 @@ footer .bottom-footer {
 }
 .top-image-section .top-image h2 {
   font-weight: 500;
-  font-size: 64px;
+  font-size: 50px;
   line-height: 56px;
   text-align: center;
   letter-spacing: 0.08em;
@@ -1620,24 +1620,17 @@ footer .bottom-footer {
   font-variant: small-caps;
   color: #ffffff;
 }
-@media screen and (max-width: 420px) {
+@media screen and (min-width: 600px) and (max-width: 992px) {
   .top-image-section .top-image h2 {
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 32px;
   }
 }
 @media screen and (max-width: 600px) {
   .top-image-section .top-image h2 {
-    font-size: 32px;
+    font-size: 18px;
     line-height: 32px;
   }
 }
-@media screen and (max-width: 992px) {
-  .top-image-section .top-image h2 {
-    font-size: 37px;
-  }
-}
-
 .top-image-section .top-image span {
   font-weight: 500;
   font-size: 24px;
