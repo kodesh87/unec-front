@@ -2197,7 +2197,7 @@ section.article-page .public span {
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 0.03em;
-  color: #828282;
+  color: #000;
   margin: 1rem 0 0;
 }
 .CTRL span {
@@ -2597,7 +2597,7 @@ select {
 .filter .form-group select {
   border: 0;
 }
-section.users .filter .form-group input[type="search"] {
+.filter .form-group input[type="search"] {
   background: #fff;
   border-bottom: 1px solid #acb1c6;
   border-radius: 0;
