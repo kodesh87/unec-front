@@ -65,7 +65,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.top-header .links,
+.top-header .dropdown-nav .navbar-nav,
 .top-header .icons {
   list-style: none;
   display: flex;
@@ -73,8 +73,26 @@ header {
   margin-bottom: 0;
   gap: 1rem;
 }
-.top-header .links li a:active:before,
-.top-header .links li a:focus:before,
+.top-header .dropdown-nav .navbar-nav .nav-link {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: #e0e0e0;
+}
+.top-header .dropdown-nav .menu-content {
+  top: 47px;
+}
+.top-header .dropdown-nav .navbar-nav .nav-link:hover,
+.top-header .dropdown-nav .navbar-nav .nav-link:active,
+.top-header .dropdown-nav .navbar-nav .nav-link:focus {
+  color: #fff;
+}
+.top-header .dropdown-nav .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+.top-header .dropdown-nav .navbar-nav li a:active:before,
+.top-header .dropdown-nav .navbar-nav li a:focus:before,
 .navbar-desktop ul li a:active:before,
 .navbar-desktop ul li a:focus:before {
   content: url("images/icons/Vector 2.svg");
