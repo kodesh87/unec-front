@@ -91,9 +91,19 @@ header {
 .top-header .dropdown-nav .navbar-nav .nav-link:hover {
   color: #fff;
 }
+header .medium-dropdown-nav .navbar-nav .nav-link:focus,
+header .medium-dropdown-nav .navbar-nav .nav-link:active,
+header .medium-dropdown-nav .navbar-nav .nav-link:hover {
+  color: #00304a;
+}
+header .medium-dropdown-nav .menu-content {
+  top: 45px;
+}
 .top-header .dropdown-nav .navbar-nav li a:active:before,
 .top-header .dropdown-nav .navbar-nav li a:focus:before,
 .navbar-desktop ul li a:active:before,
+header .medium-dropdown-nav .navbar-nav .nav-link:focus:before,
+header .medium-dropdown-nav .navbar-nav .nav-link:active:before,
 .navbar-desktop ul li a:focus:before {
   content: url("images/icons/Vector 2.svg");
   position: absolute;
@@ -109,7 +119,9 @@ header {
   text-align: center;
 }
 .navbar-desktop ul li a:active:before,
-.navbar-desktop ul li a:focus:before {
+.navbar-desktop ul li a:focus:before,
+header .medium-dropdown-nav .navbar-nav .nav-link:focus:before,
+header .medium-dropdown-nav .navbar-nav .nav-link:active:before {
   content: url("images/Vector\ 1.svg");
 }
 
@@ -241,6 +253,23 @@ header {
   margin-bottom: 22px;
 }
 /* navbar */
+header .medium-dropdown-nav .navbar-nav .nav-item {
+  align-items: center;
+  display: flex;
+}
+header .medium-dropdown-nav .navbar-nav .nav-link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #00304a;
+}
+header .medium-dropdown-nav .navbar-nav .nav-link:hover {
+  color: #00304a;
+}
 .navbar-expand-lg .navbar-nav .nav-link {
   font-weight: 700;
   font-size: 18px;
@@ -259,6 +288,9 @@ header {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: #0066cc;
+}
+.qabul:hover {
   color: #0066cc;
 }
 .navbar-expand-lg .navbar-nav {
