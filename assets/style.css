@@ -418,7 +418,7 @@ header .mobile-menu {
 .accordion .card .card-header button[aria-expanded="true"] {
   color: #006be8;
 }
-.accordion .card .card-header button:after {
+header .accordion .card .card-header button:after {
   content: url("images/+.svg");
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
@@ -426,7 +426,6 @@ header .mobile-menu {
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   right: 21px;
-  width: 10px;
   position: absolute;
 }
 .accordion .card .card-header button[aria-expanded="true"]:after {
