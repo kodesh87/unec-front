@@ -1620,9 +1620,10 @@ footer .bottom-footer {
   font-variant: small-caps;
   color: #ffffff;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 420px) {
   .top-image-section .top-image h2 {
-    font-size: 37px;
+    font-size: 22px;
+    line-height: 22px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1631,12 +1632,12 @@ footer .bottom-footer {
     line-height: 32px;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 992px) {
   .top-image-section .top-image h2 {
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 37px;
   }
 }
+
 .top-image-section .top-image span {
   font-weight: 500;
   font-size: 24px;
